@@ -35,11 +35,6 @@ class UsersController extends Controller
         ]);
     }
     
-    public function loadRelationshipCounts()
-    {
-        $this->loadCount(['microposts', 'followings', 'followers']);
-    }
-    
     public function followings($id)
     {
         // idの値でユーザを検索して取得
