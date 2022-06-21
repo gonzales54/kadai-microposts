@@ -7,10 +7,7 @@
         </aside>
         <div class="col-sm-8">
             @include('users.navtabs')
-            @if (Auth::id() == $user->id)
-                @include('microposts.form')
-            @endif
-            @include('microposts.microposts')
+            @include('microposts.favorites')
         </div>
     </div>
 @endsection
